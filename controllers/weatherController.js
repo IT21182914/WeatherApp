@@ -1,4 +1,3 @@
-// Import necessary modules and models
 const axios = require('axios');
 const WeatherData = require('../models/WeatherData');
 

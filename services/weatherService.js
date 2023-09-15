@@ -7,7 +7,7 @@ const Weather = require('../models/Weather');
 const transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
-    user: 'rohiniwijesekara68@gmail.com', // Your Gmail email address
+    user: 'rohiniwijesekara68@gmail.com', // Sending Gmail email address
     pass: 'vyjs lhcb zbaa jrsx', // Your Gmail password or an app-specific password
   },
 });
@@ -58,7 +58,7 @@ const saveWeatherData = async (location, temperature, humidity) => {
       location,
       temperature,
       humidity,
-      // Add more fields as needed
+      
     });
 
     // Save the weather data to the database

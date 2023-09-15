@@ -6,13 +6,13 @@ const weatherSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
   },
-  location: String,     // Store the location (e.g., city name)
-  temperature: Number,  // Store temperature data
-  humidity: Number,     // Store humidity data
-  // Add more fields as needed based on the data you want to store
+  location: String,     
+  temperature: Number, 
+  humidity: Number,     
+ 
   date: {
     type: Date,
-    default: Date.now, // Store the date when the data is created
+    default: Date.now, 
   },
 });
 

@@ -1,17 +1,7 @@
-// Import the User model
-// Import the User model
 const express = require('express');
 const router = express.Router();
 const User = require('../models/User');
 const { fetchWeatherDataByCoordinates, saveWeatherData } = require('../services/weatherService');
-
-
-// ... rest of your code ...
-
-
-
-
-
 
 
 // Route to store user details
