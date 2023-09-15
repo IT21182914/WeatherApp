@@ -1,4 +1,5 @@
-# WeatherApp
+# WeatherApp backend using Node js
 
-I will instructions and details about this
+
+I will add instructions and details about this
 project.
