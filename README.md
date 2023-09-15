@@ -7,7 +7,7 @@ project.
 
 
 
-Here is how you can test the backend using Postman
+Here is how you can test the backend using Postman,
 
 1.add a user - POST - http://localhost:3000/users/add-user
 
