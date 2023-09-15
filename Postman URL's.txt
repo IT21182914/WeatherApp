@@ -1,0 +1,15 @@
+1.to add a user - POST - http://localhost:3000/users/add-user
+
+{
+  "email": "dilanshanuka999@gmail.com",
+  "location": "USA"
+}
+
+
+2.to update location - PUT-  http://localhost:3000/users/update-location/6501f955d4282e41e04d1f54
+
+3.to get whether data - GET - http://localhost:3000/weather/by-coordinates?lat=40.7128&lon=-74.0060
+
+
+4.To send whether reports to all in the database - http://localhost:3000/weather/send-weather-reports
+
