@@ -22,4 +22,4 @@ Here is how you can test the backend using Postman,
 3.get whether data - GET - http://localhost:3000/weather/by-coordinates?lat=40.7128&lon=-74.0060
 
 
-4.send whether reports to all in the database - http://localhost:3000/weather/send-weather-reports
+4.send whether reports to all in the database - GET - http://localhost:3000/weather/send-weather-reports
