@@ -30,7 +30,6 @@ router.get('/send-weather-reports', async (req, res) => {
   }
 });
 
-// Function to format weather data for email
 const formatWeatherDataForEmail = (weatherData) => {
   const {
     name,
@@ -43,22 +42,22 @@ const formatWeatherDataForEmail = (weatherData) => {
   } = weatherData;
 
   const formattedMessage = `
-Hourly Weather Report for ${name}
-- Weather: ${weather[0].description}
-- Temperature: ${main.temp}°F
-- Feels Like: ${main.feels_like}°F
-- Minimum Temperature: ${main.temp_min}°F
-- Maximum Temperature: ${main.temp_max}°F
-- Pressure: ${main.pressure} hPa
-- Humidity: ${main.humidity}%
-- Visibility: ${visibility} meters
-- Wind Speed: ${wind.speed} m/s
-- Wind Direction: ${wind.deg}°
-- Gust Speed: ${wind.gust} m/s
-- Cloud Cover: ${clouds.all}%
-- Sunrise: ${new Date(sunrise * 1000).toLocaleTimeString()}
-- Sunset: ${new Date(sunset * 1000).toLocaleTimeString()}
-`;
+  Hourly Weather Report for ${name}
+  **Weather:** ${weather[0].description}
+  **Temperature:** ${main.temp}°F
+  **Feels Like:** ${main.feels_like}°F
+  **Minimum Temperature:** ${main.temp_min}°F
+  **Maximum Temperature:** ${main.temp_max}°F
+  **Pressure:** ${main.pressure} hPa
+  **Humidity:** ${main.humidity}%
+  **Visibility:** ${visibility} meters
+  **Wind Speed:** ${wind.speed} m/s
+  **Wind Direction:** ${wind.deg}°
+  **Gust Speed:** ${wind.gust} m/s
+  **Cloud Cover:** ${clouds.all}%
+  **Sunrise:** ${new Date(sunrise * 1000).toLocaleTimeString()}
+  **Sunset:** ${new Date(sunset * 1000).toLocaleTimeString()}
+  `.trim(); // Remove leading and trailing whitespace
 
   return formattedMessage;
 };
