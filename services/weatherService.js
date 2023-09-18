@@ -1,6 +1,6 @@
 const axios = require('axios');
 const nodemailer = require('nodemailer');
-const apiKey = '02d6e8f83571a5600e97a53472e654ce'; 
+const apiKey = ''; //API key for OpenWeatherMap API
 const Weather = require('../models/Weather');
 
 // Create a transporter with your email service settings
